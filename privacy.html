@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamyar</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- Modal login-->
+<div class="modal fade login-buy-subscribe pt-5 mt-5" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog mt-5">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between">
+          <h1 class="modal-title w-100 text-center fs-5" id="exampleModalLabel">ورود / ثبت نام</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-circle text-white"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input class="w-100 py-2 mt-3 form-control" type="text" placeholder="شماره موبایل یا ایمیل">
+          <div class="form-check d-flex align-items-center my-2 mb-3">
+            <input class="form-check-input  ms-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label me-2" for="flexRadioDefault1">
+                مرا به خاطر بسپار
+            </label>
+          </div>
+          <div class="d-md-flex justify-content-between">
+            <div>
+                <a class="login" href="#">ورود</a>
+            </div>
+            <div class="mt-3 mt-md-0">
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal3" class="login-with-code " href="#">ورود با رمزعبور ثابت</a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center pb-2 pt-4">
+                <a class="create-user-account" href="#" data-bs-toggle="modal" data-bs-target="#sign-up-modal">ساخت حساب کاربری</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Modal  sign-up -->
+<div class="modal fade sign-up-buy-subscribe login-buy-subscribe mt-5" id="sign-up-modal" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog mt-5">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between">
+          <h1 class="modal-title w-100 text-center fs-5" id="exampleModalLabel">ساخت حساب کاربری</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-circle text-white"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input class="w-100 py-2 mt-3 form-control" name="name" type="text" placeholder="نام">
+          <input class="w-100 py-2 mt-3 form-control" name="family" type="text" placeholder="نام خانوادگی">
+          <input class="w-100 py-2 mt-3 form-control" name="email" type="email" placeholder="پست الکترونیکی">
+          <input class="w-100 py-2 mt-3 form-control" name="phone" type="phone" placeholder="شماره موبایل">
+          <input class="w-100 py-2 mt-3 form-control" name="pass" type="password" placeholder="گذرواژه">
+            <span>حداقل 8 کاراکتر</span>
+          <div class="d-md-flex justify-content-center">
+            <div class="my-3">
+                <a class="login" href="#">عضویت</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Modal login with password-->
+<div class="modal fade login-buy-subscribe pt-5 mt-5" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog mt-5">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between">
+          <h1 class="modal-title w-100 text-center fs-5" id="exampleModalLabel">ورود با رمز عبور ثابت</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-circle text-white"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input class="w-100 py-2 mt-3 form-control" type="text" placeholder="شماره موبایل ">
+          <input class="w-100 py-2 mt-3 form-control" type="password" placeholder="گذرواژه">
+          <div class="form-check d-flex align-items-center my-2 mb-3">
+            <input class="form-check-input  ms-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label me-2" for="flexRadioDefault1">
+                مرا به خاطر بسپار
+            </label>
+          </div>
+          <div class="d-md-flex justify-content-between">
+            <div>
+                <a class="login" href="#">ورود</a>
+            </div>
+            <div class="mt-3 mt-md-0">
+                <a class="login-with-code " href="#">فراموشی گذرواژه</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- -----------------------------------------------------------------popup-top -->
+  <section class="popup-top py-3" >
+        <div class="container-fluid" >
+            <div class="row" >
+                <div class="col" >
+                    <a href="#" class="text-light d-block">اشتراک خودت رو دوازده ماهه بگیر ، پانزده ماه استفاده کن</a>
+                </div>
+            </div>
+        </div>
+  </section>
+<!------------------------------------------------------------------- logo-top---->
+  <section class="logo-top">
+        <div class="container" >
+            <div class="row align-items-center" >
+                <div class="col-md-6" >
+                    <div>
+                        <a href="#">
+                            <img src="./img/Fav-Logo-1.png" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 py-3 py-md-0 d-flex  justify-content-md-end mt-3 mt-md-0" >
+                    <div class="d-flex">
+                        <div class="login rounded-5">
+                            <a class=" px-3 py-1 d-flex align-items-center" href="#" data-bs-toggle="modal" data-bs-target="#login-modal">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                <p class="pe-2 m-0">ورود</p>
+                            </a>
+                        </div>
+                        <div class="sign-up mx-2 rounded-5">
+                            <a class=" px-3 py-1 d-flex align-items-center" href="#" data-bs-toggle="modal" data-bs-target="#sign-up-modal">
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                <p class="pe-2 m-0">ثبت نام</p>
+                            </a>
+                        </div>
+
+                        <div class="cart rounded-5" >
+                            <a class="px-2 py-1" href="#">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </section>
+<!-- ---------------------------------------------------------------- main-menu -->
+<section class="main-menu mt-2" >
+    <div class="container" >
+        <div class="row align-items-center" >
+            <div class="col-md-8" >
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav m-0">
+                          <li class="nav-item tarhe-laye-bala">
+                            <a class="nav-link" aria-current="page" href="#">طرح لایه بالا
+                                <i class="bi bi-chevron-up"></i>
+                            </a>
+                            <ul class="zir-menu-tarh-laye-bala p-0 bg-light">
+                                <li class="py-1 px-2"><a class="nav-link" href="#">طرح لایه بالای یک</a></li>
+                                <li class="py-1 px-2"><a class="nav-link" href="#">طرح لایه بالای یک</a></li>
+                                <li class="py-1 px-2"><a class="nav-link" href="#">طرح لایه بالای یک</a></li>
+                                <li class="py-1 px-2"><a class="nav-link" href="#">طرح لایه بالای یک</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item vector">
+                            <a class="nav-link" href="#">وکتور
+                                <i class="bi bi-chevron-up"></i>
+                            </a>
+                            <ul class="p-0 zir-menu-vector bg-light">
+                                <li class="py-1 px-2"><a class="nav-link" href="#">وکتور یک</a></li>
+                                <li class="py-1 px-2"><a class="nav-link" href="#">وکتور دو</a></li>
+                                <li class="py-1 px-2"><a class="nav-link" href="#">وکتور سه</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item pic">
+                            <a class="nav-link" href="#">عکس
+                                <i class="bi bi-chevron-up"></i>
+                            </a>
+                            <ul class="p-0 zir-menu-pic bg-light">
+                                <li class="py-1 px-2"><a class="nav-link" href="#">عکس یک</a></li>
+                                <li class="py-1 px-2"><a class="nav-link" href="#">عکس دو</a></li>
+                                <li class="py-1 px-2"><a class="nav-link" href="#">عکس سه</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">تایپ و گرافیک</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">طرح رایگان</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">وبلاگ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+            <div class=" py-3 py-md-0 col-md-4 d-flex justify-content-end" >
+                <div class="d-flex">
+                    <div class="invited rounded-5 ms-2">
+                        <a class=" px-3 py-1 d-flex align-items-center" href="#">
+                            <p class="pe-2 m-0 text-light">دعوت به همکاری</p>
+                        </a>
+                    </div>
+                    <div class="share rounded-5">
+                        <a class=" px-3 py-1 d-flex align-items-center" href="#">
+                            <p class="pe-2 m-0 text-light">خرید اشتراک</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ------------------------------------------------------ contact hamyar grafic -->
+<section class="contact" >
+    <div class="container" >
+        <div class="row" >
+            <div class="col" >
+                <h4 class="mt-5">حریم خصوصی</h4>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col img-hamyar pt-5 text-center" >
+                <div class="mt-5 pt-4">
+                    <img src="./img/Fav-Logo.png" alt="img">
+                    <h6 class="text-white">یک همیــــار تمام وقت</h6>
+                    <p class="m-0 p-yellow mt-3">ما قصد داریم تا تمامی نیاز های طراحان </p>
+                    <p class="p-yellow">را در حوزه گرافیک برطرف کنیم</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ------------------------------------------------------ form contact us -------->
+<section class="privacy mb-5 pb-5">
+    <div class="container" >
+        <div class="row" >
+            <div class="col" >
+                <div>
+                    <h5 class="fw-bold">قوانین و مقررات</h5>
+                    <p>کلیه فعالیت های همیارگرافیک منطبق با قوانین جمهوری اسلامی ایران و قانون تجارت الکترونیک است و متعاقباً کاربر نیز موظف به رعایت قوانین مرتبط با کاربر است. در صورتی که در قوانین و مقررات همیارگرافیک تغییراتی در آینده ایجاد شود، در همین صفحه منتشر و به روز رسانی می شود و شما توافق می‏‌کنید که استفاده مستمر شما از سایت همیارگرافیک به معنی پذیرش هرگونه تغییر است.
+                    </p>
+                    <p>   
+                        تمامی کالاها و خدمات این فروشگاه، حسب مورد دارای مجوزهای لازم از مراجع مربوطه می‌باشند.
+                    </p>
+                    <p>
+                        در هنگام قطعی سراسری اینترنت کشور، تعداد روزهای قطعی اینترنت به اشتراک کاربران اضافه می گردد ولی در صورت اختلال های جزئی و بسته شدن سرورهای خارجی، با توجه به اینکه سرور “همیارگرافیک” داخل کشور می باشد، مسئولیتی متوجه همیارگرافیک نبوده و در مدت زمان اشتراک کاربران تغییری لحاظ نمی گردد
+                    </p>
+                    <p>
+                        کاربرانی که اشتراک دارند در صورت عدم دانلود سهمیه روزانه خود به هر دلیلی (به جز قانون شماره ۳ )، سهمیه فوق باطل گشته و به روزهای آتی اضافه نمی گردد
+                    </p>
+                    <p>
+                        این وب‌سایت متعلق به گروه “همیارگرافیک” می‌باشد . همیارگرافیک دسترسی و استفاده شما از این سایت را منوط به قبول قوانین مربوطه می‌داند که با دسترسی و استفاده از این سایت شما این قوانین را قبول کرده‌اید و نیازی به اخذ امضاء از شما نیست
+                    </p>
+                    <p>
+                        کلیه حقوق مادی و معنوی محتوای سایت و طرح ها (رایگان-پولی) متعلق به “همیارگرافیک” بوده و کپی، انتقال و فروش مجدد بخشی یا همه فایل های دانلود شده از سایت ممنوع و شامل پیگیرد می باشد. همچنین هر گونه تغییر یا تحریف در فایل های سایت و نشر آن به هر طریقی (در فرمت های مختلف مانند ایندیزاین، افترافکت و …) ممنوع است
+                    </p>
+                    <p>
+                        استفاده از محتوای اختصاصی سایت مانند خوشنویسی، تایپوگرافی، تصویرسازی، عکاسی و … در طراحی، پروژه های ویدئویی و … به قصد فروش فایل در اینترنت و شبکه های مجازی ممنوع می باشد. (استفاده از محتوای اختصاصی سایت مانند خوشنویسی، تایپوگرافی، تصویرسازی، عکاسی و … در طراحی به قصد چاپ و اخذ هزینه طراحی از مشتری بابت فایل طراحی شده بلامانع است)
+                    </p>
+                    <p>
+                        خرید فایل همیارگرافیک هیچگونه حق مالکیتی برای خریدار ایجاد نکرده و فایل خریداری شده صرفاً جهت چاپ در آن واحد تجاری می باشد. (خریدار می تواند از مشتری خود بابت فایل هزینه طراحی یا هزینه ویرایش دریافت کند)
+                    </p>
+                    <p>
+                        تواند از مشتری خود بابت فایل هزینه طراحی یا هزینه ویرایش دریافت کند)
+                        درصورتیکه که برای کسب و کار خود سامانه آنلاین نظیر سایت، کانال تلگرام و… راه اندازی نموده اید می بایست نکات زیر را رعایت کنید  :
+                        قرار دادن فایل لایه باز در سامانه ممنوع می باشد  
+                    </p>
+                    <p>
+                        تصاویر درج شده در سامانه می بایست با کیفیت پایین باشند، به طوریکه قابلیت چاپ نداشته باشند.
+                        شما صرفاً مجاز به درج پیش نمایش فایل ها به قصد چاپ آنها ،‌ در سامانه آنلاین می باشید و فروش فایل لایه باز(همچنین تصویر با کیفیت فایل) و اخذ هزینه طراحی یا هزینه ویرایش از طریق سامانه ممنوع می باشد. (توجه کنید اخذ هزینه طراحی یا هزینه ویرایش فایل در مراکز تجاری فیزیکی بلامانع است)  
+                    </p>
+                    <p>
+                        در صورتیکه مشتری سامانه قصد چاپ طرح را نداشت و صرفا فایل لایه باز طرح یا تصویر با کیفیت طرح (با ویرایش یا بدون ویرایش) را درخواست نمود می بایست مشتری را به همیارگرافیک هدایت کنید
+                    </p>
+                    <p>      
+                        همیارگرافیک متعهد به احترام به حریم خصوصی اطلاعات شخصی افرادی است که با آنها ارتباط دارد 
+                    </p>
+                    <p>
+                        همیارگرافیک” می کوشد تا نوشته های استفاده شده در طرح ها غلط املایی، ویرایشی، نگارشی و محتوایی نداشته باشد. با این حال، بازبینی نهایی و اطمینان از درست بودن نوشته ها و طرح ها، به عهده کاربران محترم است و هچگونه مسئولیتی متوجه”همیارگرافیک” نمی باشد. کاربران گرامی چنانچه غلط های احتمالی نوشته ها را به ما گوشزد کنید، بسیار سپاسگزار خواهیم بود
+                    </p>
+                    <p>
+                        خریدار فایل می بایست با نرم افزارهای گرافیکی و ویدیویی آشنایی داشته باشد، هرگونه ویرایش در فایل خریداری شده از سایت به عهده خریدار بوده و هیچگونه تغییر، ویرایش و آموزشی از طرف مجموعه همیارگرافیک انجام نمی گیرد
+                    </p>
+                    <p>
+                        مسئولیت حفاظت از فایل های خریداری شده از همیارگرافیک به عهده مشتری می باشد و درصورت پاک شدن فایل ها از روی سیستم شخصی کاربران  
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 pt-5" >
+            <div class="col-2 mt-5 pt-5" ></div>
+            <div class="col-md-8" >
+                <div class="mt-5 pt-5">
+                    <p class="mb-4 text-center">
+                        در صورت وجود هرگونه سوال، لطفا با اطلاعات تماس زیرا رتباط برقرار کنید
+                    </p>
+                </div>
+                <div class="row" >
+                    <div class=" col-md-6 d-flex flex-column" >
+                        <div class="mb-3">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>۰۹۳۳۶۶۱۹۳۳۷-۰۳۵۳۸۲۱۴۰۶۶</span>
+                        </div>
+                        <div class="mb-3">
+                            <i class="bi bi-geo-alt-fill "></i>
+                            <span>یزد - بلوار پروفسور حسابی، بعد از </br> موسسه مهریار ، ساختمان همیار گرافیک</span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 d-flex flex-column">
+                        <div class="mb-3">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>info@hamyargraphic</span>
+                        </div>
+                        <div>
+                            <i class="bi bi-person-badge"></i>
+                            <span>پـــــاسخگویی از ۸ صبح تــا ۲ بامــــداد</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3 mb-5" >
+            <div class="col-2" ></div>
+            <div class="col-md-8" >
+                <div class="d-flex align-items-center justify-content-center" >
+                    <div class="line ms-2" ></div>
+                    <div>
+                        <a  href="#">
+                            <i class="fa fa-whatsapp" ></i>
+                        </a>
+                        <a class="mx-2" href="#">
+                            <i class="fa fa-telegram" ></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram" ></i>
+                        </a>
+                    </div>
+                    <div class="line me-2"></div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<footer >
+    <div class="bg-2-footer pt-5" >
+        <div class="container" >
+            <div class="row align-items-center" >
+                <div class="col-md-4" >
+                    <a href="#">
+                        <img src="./img/logo-footer.png" alt="">
+                    </a>
+                    <h4 class="mt-4">ما کی هستیم</h4>
+                    <p>
+سایت همیار گرافیک در سال ۱۳۹۹ فعالیت خود را در زمینه طراحی و فروش مجموعه طرح های ایرانی در زمینه هــــــای مختلف شروع کرد و تلاش دا رد تا تمامی نیاز های طراحان را در حو زه گرافیک برطرف نماید
+                    </p>
+                    <div>
+                        <a href="#">
+                            <i class="fa fa-whatsapp" ></i>
+                        </a>
+                        <a class="mx-2" href="#">
+                            <i class="fa fa-telegram" ></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram" ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 px-5" >
+                    <h4 class="mt-4">دسته بندی ها</h4>
+                    <ul>
+                        <li>
+                            <a href="#">طرح لایه باز</a>
+                        </li>
+                        <li>
+                            <a href="#">وکتور</a>
+                        </li>
+                        <li>
+                            <a href="#">عکس</a>
+                        </li>
+                        <li>
+                            <a href="#">تایپوگرافی</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 px-5 px-md-0" >
+                    <h4>دسترسی سریع</h4>
+                    <ul>
+                        <li>
+                            <a href="#">تماس با ما</a>
+                        </li>
+                        <li>
+                            <a href="#">درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="#">حریم خصوصی</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2" >
+                    <div dir="ltr">
+                        <div id="slider-3" class="owl-carousel owl-theme">
+                            <div class="item"><h4>
+                                <a href="#">
+                                    <img class="" src="./img/1.png" alt="img">
+                                </a>
+                            </h4></div>
+                            <div class="item"><h4>
+                                <a href="#">
+                                    <img class="" src="./img/logodd-1.png" alt="img">
+                                </a>
+                            </h4></div>
+                            <div class="item"><h4>
+                                <a href="#">
+                                    <img class="" src="./img/logodd-3.png" alt="img">
+                                </a>
+                            </h4></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container" >
+        <div class="row">
+            <div class="col d-flex py-3" >
+                <span class="ms-5">
+                    <img src="./img/Ellipse 34.png" alt="">
+                </span>
+                <h6>کلیه حقوق مادی و معنوی وب سایت  همیار گرافیک محفوظ می باشد</h6>
+            </div>
+        </div>
+    </div>
+    <div class="to-up" >
+        <a class="px-3 py-3 text-black d-block" href="#">
+            <i class="fa fa-arrow-up" ></i>
+        </a>
+    </div>
+</footer>
+
+
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery-3.6.3.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/javascript.js"></script>
+
+</body>
+</html>

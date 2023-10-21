@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamyar</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!----------------------------------------------------------------- header-panel -->
+<section class="header-panel py-4" >
+    <div class="container" >
+        <div class="row" >
+            <div class="col d-md-flex justify-content-between" >
+                <div>
+                    <img src="./img/logo-header.png" alt="img">
+                </div>
+                <div class="d-flex logo-user">
+                    <div>
+                        <img src="./img/pro.png" alt="img">
+                    </div>
+                    <div class="me-3">
+                        <p class="m-0">احمد اسماعیلی</p>
+                        <p class="m-0">کاربر سایت</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- -------------------------------------------------------------- main panel - download-history  -->
+<section class="main-panel order download-his wallet p-0 py-md-5" >
+    <div class="container" >
+        <div class="row" >
+            <div class="col-lg-3 right-menu p-0 pe-3 bg-yellow py-3" >
+                <div class="d-flex pb-2 justify-content-between align-items-center line-under-user">
+                    <div class="d-flex ">
+                        <div>
+                            <img src="./img/pro.png" alt="img">
+                        </div>
+                        <div class="me-3 ">
+                            <p class="m-0">احمد اسماعیلی</p>
+                            <p class="m-0">کاربر سایت</p>
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <div class="btn-group">
+                            <button class="btn dropdown-toggle position-relative" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-bell-o" ></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    3
+                                    <span class="visually-hidden">unread messages</span>
+                                  </span>
+                            </button>
+                            <ul class="dropdown-menu text-end">
+                              <li><a class="dropdown-item" href="#">سلام!</a></li>
+                              <li><a class="dropdown-item" href="#">خوش آمدید</a></li>
+                              <li><a class="dropdown-item" href="#">راهنمای کاربر</a></li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg dashboard mt-5" >
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="m-0 p-0 w-100 ull">
+                        <li class="counter-user">
+                            <a href="#">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            پیشخوان کاربر
+                            </a>
+                        </li>
+                        <li class="my-order ">
+                            <a href="#">
+                                <i class="fa fa-file-text" aria-hidden="true"></i>
+                            سفارش های من
+                            </a>
+                        </li>
+                        <li class="saved">
+                            <a href="#">
+                                <i class="fa fa-bookmark-o" aria-hidden="true"></i>
+                            ذخیره شده ها
+                            </a>
+                        </li>
+                        <li class="download-history active-link-panel">
+                            <a href="#">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            تاریخچه دانلود
+                            </a>
+                        </li>
+                        <li class="transactions">
+                            <a href="#">
+                                <i class="bi bi-currency-dollar"></i>
+                            تراکنش ها
+                            </a>
+                        </li>
+                        <li class="subscrib">
+                            <a href="#">
+                                <i class="bi bi-repeat"></i>
+                            اشتراک
+                            </a>
+                        </li>
+                        <li class="exit">
+                            <a href="#">
+                                <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            خروج
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-lg-9  left-item pb-4 wallet-content bg-white" >
+                <div class="row  align-items-center border-bottom mt-1">
+                    <div class="col-lg-2 d-none d-lg-block" >
+                        <a class="icon-list" href="#">
+                            <i class="fa fa-list-ul text-black fs-3" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-10 p-3" >
+                        <div class="d-md-flex align-items-center justify-content-between">
+                            <div class="border rounded-5 d-flex">
+                                <a class="me-2 pt-1" href="#">
+                                    <i class="fa fa-search " aria-hidden="true"></i>
+                                </a>
+                                <input class="w-100 wallet-input p-1" type="text">
+                            </div>
+                            <div class="w-auto py-3 py-md-0 col-md-4 d-flex justify-content-end" >
+                                <div class="d-flex">
+                                    <div class="invited rounded-5 ms-2">
+                                        <a class=" px-3 py-1 d-flex align-items-center" href="#">
+                                            <p class=" m-0 text-light">دعوت به همکاری</p>
+                                        </a>
+                                    </div>
+                                    <div class="share rounded-5">
+                                        <a class=" px-3 py-1 d-flex align-items-center" href="#">
+                                            <p class=" m-0 text-light">خرید اشتراک</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="cart ms-2 rounded-5" >
+                                    <a class="px-2 py-1" href="#">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="setting">
+                                    <a class="text-black" href="#">
+                                        <i class="bi bi-gear-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3 " >
+                    <div class="col" >
+                        <div class="overflow-x-scroll rounded-3 p-md-3 bg-table">
+                            <div class="row" >
+                                <div class="col-md-4" >
+                                    <div class="border rounded-5 d-flex">
+                                        <a class="me-2 pt-1" href="#">
+                                            <i class="fa fa-search " aria-hidden="true"></i>
+                                        </a>
+                                        <input class="w-100 wallet-input p-1" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-8" >
+                                    <div class="download-date d-flex mt-2 mt-md-0 justify-content-center  mb-2 justify-content-md-end align-items-center">
+                                        <span class="ms-3">تاریخ دانلود</span>
+                                        <input maxlength="2" type="phone">
+                                        <span class="mx-2 fs-4">/</span>
+                                        <input maxlength="2" type="phone">
+                                        <a class="me-2" href="#">
+                                            <i class="fa fa-search text-white" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="w-100">
+                                <tbody>
+                                    <tr>
+                                        <th class="py-2 opacity-0" >شماره</th>
+                                        <th class="py-2">فایل</th>
+                                        <th>کد</th>
+                                        <th>فرمت</th>
+                                        <th>مبلغ</th>
+                                        <th>تاریخ</th>
+                                        <th>جزئیات تراکنش</th>
+                                        <th class="pe-3">دانلود</th>
+                                    </tr>
+                                    <tr class="border-bottom border-top">
+                                        <td>1</td>
+                                        <td class="py-2">
+                                            <img width="54" height="52" src="./img/Decorasion-07237601490600629.png" alt="img">
+                                        </td>
+                                        <td>
+                                            <span>0035</span>
+                                        </td>
+                                        <td>
+                                            <span>psd</span>
+                                        </td>
+                                        <td>
+                                            <span>25,000</span>
+                                        </td>
+                                        <td>
+                                            1400/10/05
+                                        </td>
+                                        <td>
+                                            <a class="see" href="#">مشاهده</a>
+                                        </td>
+                                        <td>
+                                            <a class="download" href="#">
+                                                دانلود مجدد
+                                            </a>
+                                        </td>
+        
+                                    </tr>
+                                    <tr class="border-bottom border-top">
+                                        <td>2</td>
+                                        <td class="py-2">
+                                            <img width="54" height="52" src="./img/Decorasion-07237601490600629 (1).png" alt="img">
+                                        </td>
+                                        <td>
+                                            <span>0076</span>
+                                        </td>
+                                        <td>
+                                            <span>mockup</span>
+                                        </td>
+                                        <td>
+                                            <span>20,000</span>
+                                        </td>
+                                        <td>
+                                            1400/10/03
+                                        </td>
+                                        <td>
+                                            <a class="see" href="#">مشاهده</a>
+                                        </td>
+                                        <td>
+                                            <a class="download" href="#">
+                                                دانلود مجدد
+                                                
+                                            </a>
+                                        </td>
+        
+                                    </tr>
+                                    <tr class="border-bottom border-top">
+                                        <td>3</td>
+                                        <td class="py-2">
+                                            <img width="54" height="52" src="./img/Annotation 2022-01-18 171200 (1).png" alt="img">
+                                        </td>
+                                        <td>
+                                            <span>0067</span>
+                                        </td>
+                                        <td>
+                                            <span>vector</span>
+                                        </td>
+                                        <td>
+                                            <span>30,000</span>
+                                        </td>
+                                        <td>
+                                            1400/09/25
+                                        </td>
+                                        <td>
+                                            <a class="see" href="#">مشاهده</a>
+                                        </td>
+                                        <td>
+                                            <a class="download" href="#">
+                                                دانلود مجدد
+                                            </a>
+                                        </td>
+        
+                                    </tr>
+                                    <tr class="border-bottom border-top">
+                                        <td>4</td>
+                                        <td class="py-2">
+                                            <img width="54" height="52" src="./img/Decorasion-07237601490600629 (2).png" alt="img">
+                                        </td>
+                                        <td>
+                                            <span>0087</span>
+                                        </td>
+                                        <td>
+                                            <span>pictrue</span>
+                                        </td>
+                                        <td>
+                                            <span>10,000</span>
+                                        </td>
+                                        <td>
+                                            1400/09/20
+                                        </td>
+                                        <td>
+                                            <a class="see" href="#">مشاهده</a>
+                                        </td>
+                                        <td>
+                                            <a class="download" href="#">
+                                                  دانلود مجدد
+                                            
+                                            </a>
+                                        </td>
+        
+                                    </tr>
+                                    <tr class="border-bottom border-top">
+                                        <td>5</td>
+                                        <td class="py-2">
+                                            <img width="54" height="52" src="./img/Decorasion-07237601490600629.png" alt="img">
+                                        </td>
+                                        <td>
+                                            <span>0098</span>
+                                        </td>
+                                        <td>
+                                            <span>psd</span>
+                                        </td>
+                                        <td>
+                                            <span>25,000</span>
+                                        </td>
+                                        <td>
+                                            1400/08/10
+                                        </td>
+                                        <td>
+                                            <a class="see" href="#">مشاهده</a>
+                                        </td>
+                                        <td>
+                                            <a class="download" href="#">
+                                                دانلود مجدد
+                                            </a>
+                                        </td>
+        
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="page-number d-flex align-items-center justify-content-center pb-3 pt-3" >
+                               
+                                <span class="right-arrow">
+                                    <a class="px-2 py-1 d-inline-block text-black" href="#">
+                                        <i class="fa fa-arrow-right pt-1" ></i>
+                                    </a>
+                                </span>
+                                <p class="page-viwe m-0 mx-2 py-1 px-2">1</p>
+                                <span class="left-arrow">
+                                    <a class="d-inline-block  px-2 py-1 text-black" href="#">
+                                        <i class="fa fa-arrow-left pt-1" ></i>
+                                    </a>
+                                </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+            <div class="wallet-privacy d-flex mt-4" >
+                <img src="./img/Fav-Logo-12.png" alt="img">
+                <p class="mb-0 me-2">کلیه حقوق مادی و معنوی وب سایت  همیا رگرافیک محفوظ می باشد</p>
+            </div>
+         
+</section>
+ 
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery-3.6.3.min.js"></script>
+<script src="./js/javascript-wallet.js"></script>
+</body>
+</html>

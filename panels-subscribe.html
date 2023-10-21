@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hamyar</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  
+<!-- Modal login-->
+  <div class="modal fade login-buy-subscribe pt-5 mt-5" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog mt-5">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between">
+          <h1 class="modal-title w-100 text-center fs-5" id="exampleModalLabel">ورود / ثبت نام</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-circle text-white"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input class="w-100 py-2 mt-3 form-control" type="text" placeholder="شماره موبایل یا ایمیل">
+          <div class="form-check d-flex align-items-center my-2 mb-3">
+            <input class="form-check-input  ms-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label me-2" for="flexRadioDefault1">
+                مرا به خاطر بسپار
+            </label>
+          </div>
+          <div class="d-md-flex justify-content-between">
+            <div>
+                <a class="login" href="#">ورود</a>
+            </div>
+            <div class="mt-3 mt-md-0">
+                <a data-bs-toggle="modal" data-bs-target="#exampleModal3" class="login-with-code " href="#">ورود با رمزعبور ثابت</a>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center pb-2 pt-4">
+                <a class="create-user-account" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">ساخت حساب کاربری</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal  sign-up -->
+<div class="modal fade sign-up-buy-subscribe login-buy-subscribe mt-5" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog mt-5">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between">
+          <h1 class="modal-title w-100 text-center fs-5" id="exampleModalLabel">ساخت حساب کاربری</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-circle text-white"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input class="w-100 py-2 mt-3 form-control" name="name" type="text" placeholder="نام">
+          <input class="w-100 py-2 mt-3 form-control" name="family" type="text" placeholder="نام خانوادگی">
+          <input class="w-100 py-2 mt-3 form-control" name="email" type="email" placeholder="پست الکترونیکی">
+          <input class="w-100 py-2 mt-3 form-control" name="phone" type="phone" placeholder="شماره موبایل">
+          <input class="w-100 py-2 mt-3 form-control" name="pass" type="password" placeholder="گذرواژه">
+            <span>حداقل 8 کاراکتر</span>
+          <div class="d-md-flex justify-content-center">
+            <div class="my-3">
+                <a class="login" href="#">عضویت</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal login with password-->
+<div class="modal fade login-buy-subscribe pt-5 mt-5" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog mt-5">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between">
+          <h1 class="modal-title w-100 text-center fs-5" id="exampleModalLabel">ورود با رمز عبور ثابت</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="bi bi-x-circle text-white"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <input class="w-100 py-2 mt-3 form-control" type="text" placeholder="شماره موبایل ">
+          <input class="w-100 py-2 mt-3 form-control" type="password" placeholder="گذرواژه">
+          <div class="form-check d-flex align-items-center my-2 mb-3">
+            <input class="form-check-input  ms-1" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label me-2" for="flexRadioDefault1">
+                مرا به خاطر بسپار
+            </label>
+          </div>
+          <div class="d-md-flex justify-content-between">
+            <div>
+                <a class="login" href="#">ورود</a>
+            </div>
+            <div class="mt-3 mt-md-0">
+                <a class="login-with-code " href="#">فراموشی گذرواژه</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------popup-top ----->
+<section class="popup-top py-3" >
+    <div class="container-fluid" >
+        <div class="row" >
+            <div class="col" >
+                <a href="#" class="text-light d-block">اشتراک خودت رو دوازده ماهه بگیر ، پانزده ماه استفاده کن</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------------------------------------------ logo-top ---------->
+<section class="logo-top">
+    <div class="container" >
+        <div class="row align-items-center" >
+            <div class="col-md-6" >
+                <div>
+                    <a href="#">
+                        <img src="./img/Fav-Logo-1.png" class="img-fluid" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 py-3 py-md-0 d-flex  justify-content-md-end mt-3 mt-md-0" >
+                <div class="d-flex">
+                    <div class="login rounded-5">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal" class=" px-3 py-1 d-flex align-items-center" href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                            <p class="pe-2 m-0">ورود</p>
+                        </a>
+                    </div>
+                    <div class="sign-up mx-2 rounded-5">
+                        <a data-bs-toggle="modal" data-bs-target="#exampleModal2" class=" px-3 py-1 d-flex align-items-center" href="#">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            <p class="pe-2 m-0">ثبت نام</p>
+                        </a>
+                    </div>
+
+                    <div class="cart rounded-5" >
+                        <a class="px-2 py-1" href="#">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ---------------------------------------------------------------- main-menu -->
+<section class="main-menu mt-2" >
+<div class="container" >
+    <div class="row align-items-center" >
+        <div class="col-md-8" >
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav m-0">
+                      <li class="nav-item tarhe-laye-bala">
+                        <a class="nav-link" aria-current="page" href="#">طرح لایه بالا
+                            <i class="bi bi-chevron-up"></i>
+                        </a>
+                        <ul class="zir-menu-tarh-laye-bala p-0 bg-light">
+                            <li class="py-1 px-2"><a class="nav-link" href="#">طرح لایه بالای یک</a></li>
+                            <li class="py-1 px-2"><a class="nav-link" href="#">طرح لایه بالای یک</a></li>
+                            <li class="py-1 px-2"><a class="nav-link" href="#">طرح لایه بالای یک</a></li>
+                            <li class="py-1 px-2"><a class="nav-link" href="#">طرح لایه بالای یک</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item vector">
+                        <a class="nav-link" href="#">وکتور
+                            <i class="bi bi-chevron-up"></i>
+                        </a>
+                        <ul class="p-0 zir-menu-vector bg-light">
+                            <li class="py-1 px-2"><a class="nav-link" href="#">وکتور یک</a></li>
+                            <li class="py-1 px-2"><a class="nav-link" href="#">وکتور دو</a></li>
+                            <li class="py-1 px-2"><a class="nav-link" href="#">وکتور سه</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item pic">
+                        <a class="nav-link" href="#">عکس
+                            <i class="bi bi-chevron-up"></i>
+                        </a>
+                        <ul class="p-0 zir-menu-pic bg-light">
+                            <li class="py-1 px-2"><a class="nav-link" href="#">عکس یک</a></li>
+                            <li class="py-1 px-2"><a class="nav-link" href="#">عکس دو</a></li>
+                            <li class="py-1 px-2"><a class="nav-link" href="#">عکس سه</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">تایپ و گرافیک</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">طرح رایگان</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">وبلاگ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class=" py-3 py-md-0 col-md-4 d-flex justify-content-end" >
+            <div class="d-flex">
+                <div class="invited rounded-5 ms-2">
+                    <a class=" px-3 py-1 d-flex align-items-center" href="#">
+                        <p class="pe-2 m-0 text-light">دعوت به همکاری</p>
+                    </a>
+                </div>
+                <div class="share rounded-5">
+                    <a class=" px-3 py-1 d-flex align-items-center" href="#">
+                        <p class="pe-2 m-0 text-light">خرید اشتراک</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!--------------------------------------------------- buy-subscribe-with-membership ------>
+<section class=" pt-2 pb-5 buy-subscribe-with-membership" >
+    <div class="container" >
+        <div class="row align-items-center my-3" >
+            <div class="col-md-3" >
+                <div class="d-flex align-items-center">
+                    <img src="./img/buy.png" alt="img">
+                    <h5 class="p-0 m-0 fw-bold me-2">پنل های اشتراک</h5>
+                </div>
+            </div>
+            <div class="col-md-9 border-top" ></div>
+        </div>
+        <div class="row" >
+            <div class="col" >
+                <div class="d-flex justify-content-center">
+                    <span class="notice">در صورت عدم دانلود سهمیه روزانه، سهمیه فوق باطل گشته و به روزهای آتی اضافه نمی گردد</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" >
+            <div class="col-md-4 p-4" >
+                <div class="card">
+                    <h4 class="title-card py-3">دانلود روزانه 3 طرح</h4>
+                    <div class="card-body" >
+                        <h5 class="title-card-body">دانلود روزانه 3 طرح</h5>
+                        <p class="your-choice border-bottom pb-3">دانلود روزانه 3 طرح به انتخاب شما</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">اشتراک 10 روزه</span>
+                                <span class="number-subscribe-10day">65,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">اشتراک 1 ماهه</span>
+                                <span class="number-subscribe-10day">105,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">اشتراک 3 ماهه</span>
+                                <span class="number-subscribe-10day">155,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="footer-card text-center pb-3 pt-1">
+                            <span>تمامی قیمت ها به تومان میباشد</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 p-4" >
+                <div class="card">
+                    <h4 class="title-card py-3">دانلود روزانه 10 طرح</h4>
+                    <div class="card-body" >
+                        <h5 class="title-card-body">دانلود روزانه 10 طرح</h5>
+                        <p class="your-choice border-bottom pb-3">دانلود روزانه 10 طرح به انتخاب شما</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">اشتراک 10 روزه</span>
+                                <span class="number-subscribe-10day">65,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">اشتراک 1 ماهه</span>
+                                <span class="number-subscribe-10day">105,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">اشتراک 3 ماهه</span>
+                                <span class="number-subscribe-10day">155,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="footer-card text-center pb-3 pt-1">
+                            <span>تمامی قیمت ها به تومان میباشد</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4 p-4" >
+                <div class="card">
+                    <h4 class="title-card py-3">دانلود روزانه 20 طرح</h4>
+                    <div class="card-body" >
+                        <h5 class="title-card-body">دانلود روزانه 20 طرح</h5>
+                        <p class="your-choice border-bottom pb-3">دانلود روزانه 20 طرح به انتخاب شما</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">اشتراک 10 روزه</span>
+                                <span class="number-subscribe-10day">65,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">اشتراک 1 ماهه</span>
+                                <span class="number-subscribe-10day">105,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">اشتراک 3 ماهه</span>
+                                <span class="number-subscribe-10day">155,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="footer-card text-center pb-3 pt-1">
+                            <span>تمامی قیمت ها به تومان میباشد</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" >
+            <div class="col-md-4 p-4" >
+                <div class="card">
+                    <h4 class="title-card-silver py-3">طرح نقره ای همیار گرافیک</h4>
+                    <div class="card-body" >
+                        <h5 class="title-card-body-silver">خرید اشتراک 6 ماه</h5>
+                        <p class="your-choice-silver border-bottom pb-3">شما میتوانید 7 ماه از این اشتراک استفاده کنید</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">دانلود روزانه 3 طرح</span>
+                                <span class="number-subscribe-10day">455,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">دانلود روزانه 10 طرح</span>
+                                <span class="number-subscribe-10day">555,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">دانلود روزانه 20 طرح</span>
+                                <span class="number-subscribe-10day">655,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="footer-card-silver text-center pb-3 pt-1">
+                            <span>تمامی قیمت ها به تومان میباشد</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col-md-4 p-4" >
+                <div class="card">
+                    <h4 class="title-card-gold py-3">طرح طلایی همیار گرافیک</h4>
+                    <div class="card-body" >
+                        <h5 class="title-card-body-gold">خرید اشتراک 12 ماه</h5>
+                        <p class="your-choice-gold border-bottom pb-3">شما میتوانید 15 ماه از این اشتراک استفاده کنید</p>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">دانلود روزانه 3 طرح</span>
+                                <span class="number-subscribe-10day">455,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">دانلود روزانه 10 طرح</span>
+                                <span class="number-subscribe-10day">555,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <div class="d-flex flex-column">
+                                <span class="subscribe-10day mb-2">دانلود روزانه 20 طرح</span>
+                                <span class="number-subscribe-10day">655,000</span>
+                            </div>
+                            <div>
+                                <a class="buy-subscribe" href="#">خرید اشتراک</a>
+                            </div>
+                        </div>
+                        <div class="footer-card-silver text-center pb-3 pt-1">
+                            <span>تمامی قیمت ها به تومان میباشد</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+<!-- ----------------------------------------------------------- footer-------- -->
+  <footer >
+    <div class="bg-2-footer pt-5" >
+        <div class="container" >
+            <div class="row align-items-center" >
+                <div class="col-md-4" >
+                    <a href="#">
+                        <img src="./img/logo-footer.png" alt="">
+                    </a>
+                    <h4 class="mt-4">ما کی هستیم</h4>
+                    <p>
+سایت همیار گرافیک در سال ۱۳۹۹ فعالیت خود را در زمینه طراحی و فروش مجموعه طرح های ایرانی در زمینه هــــــای مختلف شروع کرد و تلاش دا رد تا تمامی نیاز های طراحان را در حو زه گرافیک برطرف نماید
+                    </p>
+                    <div>
+                        <a href="#">
+                            <i class="fa fa-whatsapp" ></i>
+                        </a>
+                        <a class="mx-2" href="#">
+                            <i class="fa fa-telegram" ></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram" ></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 px-5" >
+                    <h4 class="mt-4">دسته بندی ها</h4>
+                    <ul>
+                        <li>
+                            <a href="#">طرح لایه باز</a>
+                        </li>
+                        <li>
+                            <a href="#">وکتور</a>
+                        </li>
+                        <li>
+                            <a href="#">عکس</a>
+                        </li>
+                        <li>
+                            <a href="#">تایپوگرافی</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 px-5 px-md-0" >
+                    <h4>دسترسی سریع</h4>
+                    <ul>
+                        <li>
+                            <a href="#">تماس با ما</a>
+                        </li>
+                        <li>
+                            <a href="#">درباره ما</a>
+                        </li>
+                        <li>
+                            <a href="#">حریم خصوصی</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2" >
+                    <div dir="ltr">
+                        <div id="slider-3" class="owl-carousel owl-theme">
+                            <div class="item"><h4>
+                                <a href="#">
+                                    <img class="" src="./img/1.png" alt="img">
+                                </a>
+                            </h4></div>
+                            <div class="item"><h4>
+                                <a href="#">
+                                    <img class="" src="./img/logodd-1.png" alt="img">
+                                </a>
+                            </h4></div>
+                            <div class="item"><h4>
+                                <a href="#">
+                                    <img class="" src="./img/logodd-3.png" alt="img">
+                                </a>
+                            </h4></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container" >
+        <div class="row">
+            <div class="col d-flex py-3" >
+                <span class="ms-5">
+                    <img src="./img/Ellipse 34.png" alt="">
+                </span>
+                <h6>کلیه حقوق مادی و معنوی وب سایت  همیار گرافیک محفوظ می باشد</h6>
+            </div>
+        </div>
+    </div>
+    <div class="to-up" >
+        <a class="px-3 py-3 text-black d-block" href="#">
+            <i class="fa fa-arrow-up" ></i>
+        </a>
+    </div>
+</footer>
+
+
+
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/jquery-3.6.3.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/javascript.js"></script>
+
+</body>
+</html>
